@@ -4,20 +4,26 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         # create a dictionary to store the index of the last occurrence of each character
-        last_occurrence = {}
+        char_dict = {}
         start = 0
-        longest = 0
+        max_len = 0
         
         # loop through the string
-        for i, char in enumerate(s):
+        for end in range(len(s)):
             # if the character is already in the dictionary, update the start index
-            if char in last_occurrence:
-                start = max(start, last_occurrence[char] + 1)
+            if s[end] in char_dict:
+                start = max(start, char_dict[s[end]] + 1)
             # update the last occurrence index
-            last_occurrence[char] = i
+            char_dict[s[end]] = end
             # update the longest substring length
-            longest = max(longest, i - start + 1)
+            max_len = max(max_len, end - start + 1)
         
-        return longest  # return the longest substring length 
+        return max_len  # return the longest substring length 
       
       
+sol = Solution()
+print(sol.lengthOfLongestSubstring("abcabcbb"))  # Output: 3
+print(sol.lengthOfLongestSubstring("bbbbb"))     # Output: 1
+print(sol.lengthOfLongestSubstring("pwwkew"))    # Output: 3
+print(sol.lengthOfLongestSubstring(""))          # Output: 0
+print(sol.lengthOfLongestSubstring("dvdf"))      # Output: 3
