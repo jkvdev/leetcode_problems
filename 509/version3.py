@@ -16,17 +16,14 @@
 # Output: 2
 class Solution:
     def fib(self, n: int) -> int:
-        # Count up from the start
-        # Get base cases 
-        ans = [0,1]
-
-        # Compute Fibonacci numbers iteratively
-        for i in range(2,n+1):
-            # Append the sum of the previous two values
-            ans.append(ans[i-1]+ans[i-2])
-
-        # Return the value at the nth index
-        return ans[n]
+        if n < 2: return n
+        
+        a, b = 0, 1  # Base cases
+            
+        for _ in range(2, n + 1):
+            a, b = b, a + b  # Shift values
+        
+        return b
     
 # Create an instance of the Solution class
 sol = Solution()
