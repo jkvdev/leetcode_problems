@@ -5,7 +5,7 @@ class Node:
         self.val = val
         self.neighbors = neighbors if neighbors is not None else []
         
-# Time: O(Verteces + Edges)
+# Time: O(Vertices + Edges)
 # Space: O(V)
 from typing import Optional
 class Solution:
