@@ -3,7 +3,7 @@
 from typing import List
 import bisect  # Importing bisect for binary search operations
 
-# Time: O(n**2)
+# Time: O(n log n)
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
         # This list will store the smallest possible ending element of increasing subsequences.

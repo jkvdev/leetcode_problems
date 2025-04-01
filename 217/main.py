@@ -5,14 +5,14 @@ from typing import List
 # https://leetcode.com/problems/contains-duplicate/
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-      h = set() # HashSet to track seen numbers
-      
-      for num in nums:
-          if num in h:
-              return True # Duplicate found
-          h.add(num) # Add the number to the HashSet 
-          
-      return False # No duplicates found
+        h = set() # HashSet to track seen numbers
+        
+        for num in nums:
+            if num in h:
+                return True # Duplicate found
+            h.add(num) # Add the number to the HashSet 
+            
+        return False # No duplicates found
     
 sol = Solution()  # Create an instance of Solution
 
