@@ -39,7 +39,7 @@ class Solution:
                     
         # return result
         return num_islands # Time: O(row*col) Space: O(row*col)
-      
+        
 
 # Example Usage
 solution = Solution()
