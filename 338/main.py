@@ -1,6 +1,8 @@
 
 from typing import List
 
+# Time: O(n)
+# Space: O(n)
 class Solution:
     def countBits(self, n: int) -> List[int]:
         # Initialize an array 'dp' of size (n+1) with all elements set to 0
@@ -25,8 +27,8 @@ class Solution:
         
         # Return the list containing the count of 1s for each number from 0 to n
         return dp
-      
-      
+        
+        
 # Example usage:
 sol = Solution()  # Create an instance of the Solution class
 n = 5
