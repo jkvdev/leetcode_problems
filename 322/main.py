@@ -2,6 +2,8 @@ from typing import List
 
 # Coin Change
 # Dynamic Programming
+# Time: O(n*c)
+# Space: O(n)
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
       # number of coins

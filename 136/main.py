@@ -13,7 +13,7 @@ class Solution:
         for n in nums:
             res = res ^ n # XOR operation
         return res
-      
+        
 # Create an instance of the Solution class
 sol = Solution()
 
