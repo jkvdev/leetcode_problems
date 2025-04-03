@@ -2,7 +2,7 @@ from typing import List
 
 # Time Complexity: O(2^n) - Each letter in the input string can be either lowercase or uppercase,
 # leading to exponential growth in the number of permutations.
-# Space Complexity: O(2^n) - Since we store all permutations in `res`, the space usage grows exponentially.
+# Space Complexity: O(n + 2^n) - Since we store all permutations in `res`, the space usage grows exponentially.
 
 class Solution:
     def letterCasePermutation(self, s: str) -> List[str]:
