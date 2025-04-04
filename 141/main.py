@@ -1,5 +1,8 @@
 from typing import Optional
 
+# Time: O(n)
+# Space: O(1)
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
@@ -19,12 +22,12 @@ class Solution:
             fast = fast.next.next
             # If the pointers meet
             if slow == fast:
-              # The linked list has a loop
-              return True
-          
+                # The linked list has a loop
+                return True
+            
         # No loop found
         return False
-      
+
 # Function to create a cycle in a linked list
 def create_cycle(head: ListNode, pos: int) -> ListNode:
     if pos == -1:
