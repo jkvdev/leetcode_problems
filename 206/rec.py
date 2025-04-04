@@ -2,7 +2,7 @@
 from typing import Optional
 
 # Time: O(n)
-# Space: O(1)
+# Space: O(n)
 # Recursive
 
 # Step 1: Define the ListNode class
