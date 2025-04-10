@@ -52,8 +52,8 @@ def printGraph(node):
         print(f"Node {curr.val} -> {[n.val for n in curr.neighbors]}")
         for neighbor in curr.neighbors:
             stack.append(neighbor)
-      
-      
+        
+        
 # Example Usage:
 # Creating a sample graph:
 #     1 -- 2
